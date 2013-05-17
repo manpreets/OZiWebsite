@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/" title="Home"  description="Home Page">
+        <siteMapNode url="~/Default.aspx" title="Home"  description="Home Page" />
+        <siteMapNode url="~/Employment/Default.aspx" title="Employment"  description="Empoyment oppertunities and criterias" >
+          <siteMapNode url="~/Employment/JobSearch.aspx" title="Job Search" description="Job Search" />
+          <siteMapNode url="~/Employment/CandidateRegistration.aspx" title="Register" description="Candidate Registration" />
+        </siteMapNode>
+        <siteMapNode url="~/News/Default.aspx" title="NEWS" description="News about nurses, medicine etc.">
+          <siteMapNode url="~/News/OHS.aspx" title="OHS"        description="Ocupational Health and Safty issues in Nursing"/>
+          <siteMapNode url ="~/News/Education.aspx" title="Education" description="Education and Training" />
+        </siteMapNode>
+      <siteMapNode url="~/About/Default.aspx" title="About" description="About">
+        <siteMapNode url="~/About/AboutUs.aspx" title="About us" description ="About us and our goals"  />
+        <siteMapNode url ="~/About/ContactUs.aspx" title="Contact us" description="Send us email or call us" />
+        <siteMapNode url="~/About/FAQ.aspx" title="F A Q" description="Frequently asked questions."/>       
+      </siteMapNode>
+      <siteMapNode url="~/Candidate/Default.aspx" title="Candidate" description="View your profile, apply jobs">
+        <siteMapNode url="~/Candidate/MyProfile.aspx" title="My Profile" description="View and edit your details " />
+        <siteMapNode url="~/Candidate/ApplyJob.aspx" title="Apply Job" description="Apply a new job" />
+        <siteMapNode url ="~/Candidate/JobStatus.aspx" title="Jobs Status" description="View or cancel applied jobs." />
+      </siteMapNode>
+      <siteMapNode url="~/Administration/Default.aspx" title="Administration" description="Administration to manage nursing shift and resources">
+        <siteMapNode url="~/Administration/ManageShifts.aspx" title="Manage Shifts" description="Manage shifts" />
+        <siteMapNode url="~/Administration/CreateNurse.aspx" title="Create Nurse" description="Create or edit nurse" />
+        <siteMapNode url="~/Administration/ManageNurses.aspx" title="Manage Nurses" description="Manage nurses" />
+      </siteMapNode>
+      <siteMapNode url="~/NursingStaff/Default.aspx" title="Staff" description="View and edit your profile and shifts">
+        <siteMapNode url="~/NursingStaff/MyProfile.aspx" title="My Profile" description="View and edit your profile" />
+        <siteMapNode url ="~/NursingStaff/MyShifts.aspx" title ="My Shifts" description="View your shifts" />
+        
+        
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

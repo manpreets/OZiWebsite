@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPages_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server">
+    <Scripts >
+    <asp:ScriptReference path="~/Scripts/jquery-1.4.min.js" />
+    </Scripts>
+    </asp:ScriptManager>
+    <div id="PageWrapper">
+        <div id="Header">
+                OZi NURSING AGENCY
+        </div>
+        <div id="MenuWrapper">
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal"
+              StaticEnableDefaultPopOutImage="false"  CssClass="MainMenu">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" ShowStartingNode="false" runat="server" />
+        </div>
+        <div id="RightBar">
+                           &nbsp;Vivamus in leo sed diam vehicula pharetra. Fusce odio lorem, cursus sit amet molestie eu, pulvinar ut sem. Donec a venenatis mauris. Sed mollis, urna sit amet fringilla euismod, leo tortor placerat magna, sed accumsan odio magna in turpis. Ut purus odio, laoreet id dapibus vel, ullamcorper ac arcu.
+                           <br />
+                           <br />
+                           <br />
+                           <br />
+
+        </div>
+        <div id="MainContent">
+        <div id="SiteMapPath" class="SiteMap">
+            <asp:SiteMapPath ID="SiteMapPath1" CssClass="SiteMap" runat="server"></asp:SiteMapPath>
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+    
+        </div>
+        <div id="SideBar">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer augue diam, porttitor pretium sodales nec, sagittis sit amet lacus. Fusce faucibus fringilla mi eu consectetur. Fusce dapibus augue vitae risus volutpat fringilla. Donec laoreet elementum pretium. Pellentesque sodales pharetra ipsum at hendrerit. Praesent eu neque in arcu commodo rutrum non non mauris. Duis posuere enim odio. Praesent vel erat rutrum nulla interdum viverra. Vivamus in leo sed diam vehicula pharetra. Fusce odio lorem, cursus sit amet molestie eu, pulvinar ut sem. Donec a venenatis mauris. Sed mollis, urna sit amet fringilla euismod, leo tortor placerat magna, sed accumsan odio magna in turpis. Ut purus odio, laoreet id dapibus vel, ullamcorper ac arcu.
+        
+        </div>
+
+        <div id="Footer">
+
+            <asp:LoginView ID="LoginView1" runat="server">
+
+            <AnonymousTemplate>
+           
+                         You are not logged in.
+                       
+            </AnonymousTemplate>
+            <LoggedInTemplate>
+                <asp:LoginName ID="LoginName1" Font-Size="12px" FormatString="You are logged in as {0}" runat="server" />
+            </LoggedInTemplate>
+                         
+
+            </asp:LoginView>
+            <asp:LoginStatus ID="LoginStatus1" Font-Size="12px" runat="server" />
+        </div>
+    </div>
+    </form>
+</body>
+</html>
